@@ -1,0 +1,12 @@
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px;
+}
+.status-bar__column:first-child {
+  margin-left: 10px;
+  font-weight: bolder;
+}
+.status-bar__column .fa-wifi {
+  margin: 0px 5px;
+}
