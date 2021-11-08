@@ -12,10 +12,9 @@
 
 body {
   font-family: "Noto Serif KR", serif;
-  background-color: tomato;
 }
 
 .icon {
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 }
