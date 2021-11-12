@@ -4,17 +4,39 @@
 @import "variables.css";
 
 /* Components */
+@import "components/screen-header.css";
+@import "components/alt-screen-header.css";
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
+@import "components/user-components.css";
+@import "components/badge.css";
+@import "components/icon-row.css";
 
 /* Screens */
 @import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/chats.css";
+@import "screens/shop.css";
+@import "screens/more.css";
+@import "screens/settings.css";
 
 body {
   font-family: "Noto Serif KR", serif;
+  color: #2e363e;
 }
 
 .icon {
   height: 30px;
   width: 30px;
+}
+
+.not-bold {
+  font-weight: normal;
+}
+.main-screen {
+  padding: 0px var(--horizontal-space);
+}
+svg {
+  display: block;
+  margin: auto;
 }

@@ -1,0 +1,32 @@
+.screen-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px 20px;
+  align-items: center;
+}
+
+.screen-header__title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.screen-header__icons {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 155px;
+}
+
+.screen-header__icons span {
+  margin-left: 25px;
+}
+
+.screen-header__icons svg {
+  width: 20px;
+  height: 20px;
+}
+
+.shopping-header {
+  margin-right: 110px;
+}

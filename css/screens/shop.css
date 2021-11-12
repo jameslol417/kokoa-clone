@@ -1,0 +1,46 @@
+.border-bottom {
+  border-bottom: var(--main-border);
+}
+
+.shop-ad-box {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: wheat;
+}
+
+.shop-ad-box img {
+  width: 120px;
+  height: 120px;
+  align-self: center;
+  padding-right: 50px;
+}
+
+.shop-ad-box-left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 25px;
+}
+
+.shop-header {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  margin: 15px 0px;
+}
+
+.shop-ad-content {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.shop-ad-content-alt {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 40px;
+}
