@@ -1,8 +1,7 @@
 #chat-screen {
   background-color: #abc1d1;
-  height: 11000vh;
+  height: 100vh;
 }
-
 #chat-screen .alt-header,
 #chat-screen .status-bar {
   top: 0;
@@ -39,6 +38,7 @@
 .message-row {
   width: 100%;
   display: flex;
+  margin-bottom: 25px;
 }
 
 .message-row img {
@@ -85,4 +85,67 @@
 .message__time {
   opacity: 0.8;
   font-size: 15px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+/* Own side message bubble modifiers */
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  margin-right: 0px;
+  margin-left: 5px;
+}
+
+.bubble-bottom-1::after {
+  border-top-color: var(--yellow);
+  right: -7px;
+  border-bottom: 0;
+  top: 50%;
+  margin-top: -12px;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply input {
+  height: 30px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 20px;
+}
+
+.reply__column i {
+  color: var(--grey4);
+}
+
+.reply__column:last-child i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.reply__column:last-child i:nth-child(2) {
+  right: 50px;
 }

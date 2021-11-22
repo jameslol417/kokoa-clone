@@ -23,7 +23,7 @@
 
     <header class="alt-header">
       <div class="alt-header-column">
-        <a href="javascript:history.back();">
+        <a href="chats.html">
           <span>
             <img class="alt-header-icons" src="icons/svg/angle-left.svg" />
           </span>
@@ -43,7 +43,7 @@
     <div class="main-screen main-chat">
       <div class="chat__timestamp">2021년 11월 12일 금요일</div>
       <div class="message-row">
-        <img src="pikachu.png" />
+        <img src="icons/png/pikachu.png" />
         <div class="message-row__content">
           <span class="message__author">한지우</span>
           <div class="message__info">
@@ -52,7 +52,26 @@
           </div>
         </div>
       </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble bubble-bottom-1">츄? 🥺</span>
+            <span class="message__time">오후 6:32</span>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-2x"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" maxlength="65" />
+        <i class="far fa-smile fa-lg"></i>
+        <i class="fas fa-hashtag fa-lg"></i>
+      </div>
+    </form>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
