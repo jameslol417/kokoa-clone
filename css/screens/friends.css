@@ -18,7 +18,7 @@
 }
 
 .box-space {
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
 .friends-screen__header {
@@ -27,6 +27,27 @@
   justify-content: space-between;
   color: #989898;
 }
+
+.friends-screen__friends .user-component {
+  margin-bottom: 20px;
+}
+
+@keyframes userChange {
+  from {
+    transform: scale(none);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+.user-component:hover {
+  border-radius: 10px;
+  animation: userChange 0.2s ease-in-out forwards;
+  box-shadow: 5px 5px 5px 5px var(--grey2);
+  padding: 5px 10px;
+}
+
 
 @keyframes hideSplashScreen {
   from {
@@ -40,7 +61,8 @@
 
 #splash-screen {
   background-color: var(--yellow);
-  position: absolute;
+  position: fixed;
+  z-index: 99;
   height: 100vh;
   width: 100vw;
   top: 0;

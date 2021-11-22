@@ -1,6 +1,92 @@
 #mm {
   border-radius: 18px;
 }
+
+.wallet {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--yellow);
+  padding: 25px;
+}
+
+.wallet-row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.wallet-row:first-child .wallet-column:first-child span{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.wallet-column {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.wallet-header {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.wallet-icon {
+  height: 22px;
+  width: 22px;
+}
+
+.wallet-row:nth-child(2) {
+  background-color: white;
+  padding: 15px 10px;
+  border-radius: 5px;
+}
+
+#vaccine {
+  background-color: blue;
+  height: 26px;
+  width: 26px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+#vaccine i {
+  color: white;
+}
+
+.wallet-row:nth-child(3) .wallet-column:first-child span{
+  font-weight: bold;
+}
+
+.wallet-row:last-child {
+  margin-bottom: 0;
+}
+
+.wallet-footer {
+  padding: 0 20px;
+}
+
+.wallet-footer:first-child {
+  padding-left: 0;
+}
+
+.wallet-footer:not(:last-child) {
+  border-right: 1px solid var(--grey4);
+}
+
+.wallet-row:last-child .wallet-column:last-child i {
+  margin-right: 10px;
+}
+
+/* weather */
+
 .weather {
   margin-top: 50px;
   border-top: var(--main-border);

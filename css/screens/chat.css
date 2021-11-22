@@ -36,8 +36,35 @@
   flex-direction: column;
   align-items: center;
   will-change: transform;
+}
+
+.chat__timestamp,
+.message-row {
   animation: fadeIn 0.8s linear;
 }
+
+.message-row:nth-child(3) {
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+
+.message-row:nth-child(4) {
+  animation-delay: 1.5s;
+  animation-fill-mode: backwards;
+}
+
+.message-row:nth-child(5),
+.message-row:nth-child(6){
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+.message-row:nth-child(7){
+  animation-delay: 2.5s;
+  animation-fill-mode: backwards;
+}
+
 
 .chat__timestamp {
   color: white;
@@ -123,6 +150,9 @@
   flex-direction: row-reverse;
 }
 
+
+/* reply section */
+
 .reply {
   position: fixed;
   bottom: 0;
@@ -183,3 +213,4 @@
 .reply:focus-within {
   transform: translateY(80px);
 }
+
