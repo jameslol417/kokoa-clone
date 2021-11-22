@@ -16,6 +16,8 @@
     font-size: 32px;
     font-weight: 600;
   }
+
+  /* no scroll */
   body {
     margin: 0;
     height: 100%;
