@@ -9,7 +9,7 @@
       }
     </style>
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>10:30</span>
@@ -24,54 +24,34 @@
     <header class="alt-header">
       <div class="alt-header-column">
         <a href="javascript:history.back();">
-          <svg
-            class="alt-header-icons"
-            aria-hidden="true"
-            data-prefix="fal"
-            data-icon="angle-left"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 192 512"
-          >
-            <path
-              fill="currentColor"
-              d="m25.1 247.5 117.8-116c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L64.7 256l102.2 100.4c4.7 4.7 4.7 12.3 0 17l-7.1 7.1c-4.7 4.7-12.3 4.7-17 0L25 264.5c-4.6-4.7-4.6-12.3.1-17z"
-            />
-            <rect x="0" y="0" width="100%" height="100%" fill="none" />
-          </svg>
+          <span>
+            <img class="alt-header-icons" src="icons/svg/angle-left.svg" />
+          </span>
         </a>
       </div>
       <div class="alt-header-column">
-        <h1 class="alt-header-title">설정</h1>
+        <h1 class="alt-header-title">한지우</h1>
       </div>
       <div class="alt-header-column">
-        <i class="fas fa-search fa-lg"></i>
+        <div class="chat-header-last">
+          <span> <i class="fas fa-search fa-lg"></i></span>
+          <span><i class="fas fa-bars fa-lg"></i></span>
+        </div>
       </div>
     </header>
 
-    <div class="main-screen">
-      <ul class="settings-list">
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-bullhorn"></i>
-            <span>공지사항</span>
+    <div class="main-screen main-chat">
+      <div class="chat__timestamp">2021년 11월 12일 금요일</div>
+      <div class="message-row">
+        <img src="pikachu.png" />
+        <div class="message-row__content">
+          <span class="message__author">한지우</span>
+          <div class="message__info">
+            <span class="message__bubble bubble-bottom">가랏 피카츄!</span>
+            <span class="message__time">오후 6:30</span>
           </div>
-          <div class="settings__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-flask"></i>
-            <span>실험실</span>
-          </div>
-          <div class="settings__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <img src="icons/svg/info.svg" />
-            <span>버전정보</span>
-          </div>
-          <div class="settings__setting-column">최신 버전</div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
 
     <script

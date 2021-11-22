@@ -1,6 +1,6 @@
 .alt-header {
-  padding: 40px 20px 20px;
-  margin-bottom: 15px;
+  margin-top: 25px;
+  padding: 10px 20px 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,12 +14,33 @@
 .alt-header-title {
   font-size: 24px;
   font-weight: 600;
+  justify-content: center;
+  opacity: initial;
+}
+
+.alt-header-column {
+  width: 33%;
 }
 
 .alt-header-column:first-child {
   margin-right: auto;
+  justify-items: flex-start;
+}
+
+.alt-header-column:nth-child(2) {
+  text-align: center;
 }
 
 .alt-header-column:last-child {
   margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header-column:last-child span:not(:first-child) {
+  margin-left: 20px;
+}
+
+.setting-header {
+  margin-bottom: 30px;
 }
