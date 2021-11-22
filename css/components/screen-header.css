@@ -30,3 +30,31 @@
 .shopping-header {
   margin-right: 110px;
 }
+
+@keyframes rotateHeader {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.screen-header__icons i:hover,
+.setting-header i:hover,
+.screen-header__icons span:not(last-child) svg:hover {
+  animation: rotateHeader 1.5s linear infinite;
+}
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons span:last-child svg:hover {
+  animation: rotateCog 1s linear infinite;
+}

@@ -9,11 +9,24 @@
   background-color: wheat;
 }
 
+@keyframes shopImg {
+  0% {
+    transform: scale(none);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(none);
+  }
+}
+
 .shop-ad-box img {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   align-self: center;
   padding-right: 50px;
+  animation: shopImg 3s ease-in-out infinite;
 }
 
 .shop-ad-box-left {
